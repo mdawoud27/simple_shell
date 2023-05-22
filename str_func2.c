@@ -9,14 +9,12 @@
 char *_strcpy(char *dest, const char *src)
 {
 	char *ptr = dest;
-	
+
 	while (*src)
 	{
 		*ptr++ = *src++;
 	}
-	
 	*ptr = '\0';
-	
 	return (dest);
 }
 
@@ -34,7 +32,7 @@ int _strncmp(const char *s1, const char *s2, size_t n)
 	for (i = 0; i < n; i++)
 	{
 		if (s1[i] != s2[i])
-			return (int)(s1[i] - s2[i]);
+			return ((int)(s1[i] - s2[i]));
 
 		if (s1[i] == '\0')
 			return (0);
