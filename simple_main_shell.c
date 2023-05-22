@@ -34,8 +34,10 @@ int main(int argc, char **argv, char **envp)
 				get_envi(envp);
 			else
 			{
-				int path_result = path_sepetator(&command_args[0], envp);
-				exit_status = fork_func(command_args, argv, envp, command, path_count, path_result);
+				int path_result = path_separator(&command_args[0], envp);
+
+				exit_status = fork_func(command_args, argv, envp, command,
+						path_count, path_result);
 				if (path_result == 0)
 					free(command_args[0]);
 			}
