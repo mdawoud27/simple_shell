@@ -1,2 +1,4 @@
 hsh
 author_generator.sh
+*.swo
+*.swp
