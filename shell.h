@@ -20,7 +20,8 @@ void ext_func(char **argv, char *ptr_line, int ext);
 void get_envi(char **env);
 
 /* fork_func.c */
-int fork_func(char *arg[], char *av[], char *envi[], char *ptr_line, int pidd, int checker);
+int fork_func(char *arg[], char *av[], char *envi[],
+		char *ptr_line, int pidd, int checker);
 
 /* get_path_func.c */
 char *get_path(char **env);
